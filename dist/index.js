@@ -8,23 +8,32 @@
 //     evento.preventDefault();
 //     console.log(`${type.value.toUpperCase()} es de: ${toFrom.value} details: ${details.value} the amount is: ${amount.valueAsNumber}`);
 // });
-let names = ["mario", "luigi", "yoshi"];
-names.push("peach");
-console.log(names);
-let numbers = [1, 2, 3, 4];
-numbers.push(5);
-console.log(numbers);
-let numbers2 = [1, 2, 3, 4];
-numbers2.push("30");
-console.log(numbers2);
-let user = {
-    firstName: "Sao",
-    lastName: "Parra",
-    age: 25
+const add = (num1, num2 = 10) => {
+    // console.log(num1 + num2)
+    let suma = 0;
+    if (num2) {
+        suma = num1 + num2;
+    }
+    //const suma: number = num1 + num2!
+    return suma.toString();
 };
-user = {
-    firstName: "Mario",
-    lastName: "Bros",
-    age: 80
-};
-console.log(user.firstName.length);
+console.log(add(1, 3));
+/*
+
+const add = (num1:number,num2:number): string => {
+    // console.log(num1 + num2)
+    const suma: number = num1 + num2
+    return suma.toString()
+}
+
+const add = (num1:number,num2?:number): string => {
+    // let suma: number = 0
+    // if(num2) {
+    //     suma = num1 + num2
+    // }
+    const suma: number = num1 + num2!
+    return suma.toString()
+}
+
+console.log(add(1,3))
+ */ 
