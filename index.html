@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typescript</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Invoices - Payments</h1>
+
+        <!-- output list -->
+        <ul class="item-list"></ul>
+    </div>
+
+    <form class="new-item-form">
+        <div class="field">
+            <label for="">Type:</label>
+            <select id="type">
+                <option value="invoice">Invoice</option>
+                <option value="payment">Payment</option>
+            </select>
+        </div>
+        <div class="field">
+            <label for="">To / From:</label>
+            <input type="text" id="tofrom">
+        </div>
+        <div class="field">
+            <label for="">Details:</label>
+            <input type="text" id="details">
+        </div>
+        <div class="field">
+            <label for="">Amount ($):</label>
+            <input type="text" id="amount">
+        </div>
+        <button>Add</button>
+    </form>
+</body>
+</html>
