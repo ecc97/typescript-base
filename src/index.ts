@@ -10,7 +10,32 @@
 //     console.log(`${type.value.toUpperCase()} es de: ${toFrom.value} details: ${details.value} the amount is: ${amount.valueAsNumber}`);
 // });
 
-const inputs = document.querySelectorAll("input")
-inputs.forEach((input) => {
-    console.log(input)
-})
+let names:string[] = ["mario","luigi","yoshi"]
+
+names.push("peach")
+
+console.log(names)
+
+let numbers:number[] = [1,2,3,4]
+numbers.push(5)
+
+console.log(numbers)
+
+let numbers2:(number | string)[] = [1,2,3,4]
+numbers2.push("30")
+
+console.log(numbers2)
+
+let user = {
+    firstName: "Sao",
+    lastName: "Parra",
+    age: 25
+}
+
+user = {
+    firstName: "Mario",
+    lastName: "Bros",
+    age: 80
+}
+
+console.log(user.firstName.length)
